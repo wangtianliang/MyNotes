@@ -17,5 +17,6 @@ pages:
     - docker基本命令使用: docker/docker2.md
 - 工具:
     - idea: tools/IntellijIdeaSwitchSVNPath.md
+    - idea快捷键: tools/IntellijIDEAKeyMap.md
 
 theme: readthedocs
