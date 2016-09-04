@@ -1,0 +1,21 @@
+site_name: 笔记记录
+pages:
+- Home: index.md
+- Java: 
+    - 数组: java/javaArray.md
+    - 随机数: java/javaRandomString.md
+- Linux: 
+    - Cento安装后配置: linux/centosInstallConfig.md
+    - 常用总结: linux/linuxSkills.md
+    - 挂载硬盘: linux/linuxMountDisk.md
+    - 网络配置: linux/linuxNetworkConfig.md
+- Git:
+    - 技巧: git/git1.md
+    - 基本使用: git/git2.md
+- Docker:
+    - docker常用命令: docker/docker1.md
+    - docker基本命令使用: docker/docker2.md
+- 工具:
+    - idea: tools/IntellijIdeaSwitchSVNPath.md
+
+theme: readthedocs
