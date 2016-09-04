@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>docker基本命令使用 - 笔记记录</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "docker基本命令使用";
+    var mkdocs_page_input_path = "docker\docker2.md";
+    var mkdocs_page_url = "/docker/docker2/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> 笔记记录</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Java</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../java/javaArray/">数组</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../java/javaRandomString/">随机数</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Linux</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/centosInstallConfig/">Cento安装后配置</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/linuxSkills/">常用总结</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/linuxMountDisk/">挂载硬盘</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/linuxNetworkConfig/">网络配置</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Git</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../git/git1/">技巧</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../git/git2/">基本使用</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Docker</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../docker1/">docker常用命令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">docker基本命令使用</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#_1">容器相关操作</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_2">容器启动调整</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_3">获取容器相关信息</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_4">导出容器</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_5">执行</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_6">镜像操作</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#registry">镜像仓库(registry)操作</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#docker-daemondocker">启动docker daemon并重启docker</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_7">查看日志</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_8">获取容器环境变量</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>工具</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/IntellijIdeaSwitchSVNPath/">idea</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">笔记记录</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Docker &raquo;</li>
+        
+      
+    
+    <li>docker基本命令使用</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">容器相关操作</h1>
+<pre><code>docker create # 创建一个容器但是不启动它
+docker run # 创建并启动一个容器
+docker stop # 停止容器运行，发送信号SIGTERM
+docker start # 启动一个停止状态的容器
+docker restart # 重启一个容器
+docker rm # 删除一个容器
+docker kill # 发送信号给容器，默认SIGKILL
+docker attach # 连接(进入)到一个正在运行的容器
+docker wait # 阻塞到一个容器，直到容器停止运行
+</code></pre>
+<h1 id="_2">容器启动调整</h1>
+<pre><code>docker update --restart=always Name/ID docker服务重启对应容器跟着启动
+</code></pre>
+<h1 id="_3">获取容器相关信息</h1>
+<pre><code>docker ps # 显示状态为运行（Up）的容器
+docker ps -a # 显示所有容器,包括运行中（Up）的和退出的(Exited)
+docker inspect # 深入容器内部获取容器所有信息
+docker logs # 查看容器的日志(stdout/stderr)
+docker events # 得到docker服务器的实时的事件
+docker port # 显示容器的端口映射
+docker top # 显示容器的进程信息
+docker diff # 显示容器文件系统的前后变化
+</code></pre>
+<h1 id="_4">导出容器</h1>
+<pre><code>docker cp # 从容器里向外拷贝文件或目录
+docker export # 将容器整个文件系统导出为一个tar包，不带layers、tag等信息
+docker export tomcat &gt; tomcat.tar
+docker export --output="tomcat.tar" tomcat
+
+docker import # 从一个tar包创建一个镜像，往往和export结合使用
+docker import /path/to/tomcat.tar
+</code></pre>
+<h1 id="_5">执行</h1>
+<pre><code>docker exec # 在容器里执行一个命令，可以执行bash进入交互式
+</code></pre>
+<h1 id="_6">镜像操作</h1>
+<pre><code>docker images # 显示本地所有的镜像列表
+docker build # 使用Dockerfile创建镜像（推荐）
+docker commit # 从容器创建镜像
+docker rmi # 删除一个镜像
+docker history # 显示生成一个镜像的历史命令
+docker tag # 为镜像起一个别名
+
+docker save # 将一个镜像保存为一个tar包，带layers和tag信息
+docker save tomcat &gt; /opt/tomcat.tar
+docker save --output /opt/tomcat.tar tomcat
+docker save -o /opt/tomcat.tar tomcat
+
+docker load # 从一个tar包创建一个镜像，和save配合使用
+docker load  &lt; tomcat.tar
+docker load --input tomcat.tar
+docekr load -i tomcat.tar
+</code></pre>
+<h1 id="registry">镜像仓库(registry)操作</h1>
+<pre><code>docker login # 登录到一个registry
+docker search # 从registry仓库搜索镜像
+docker pull # 从仓库下载镜像到本地
+docker push # 将一个镜像push到registry仓库中
+</code></pre>
+<h1 id="docker-daemondocker">启动docker daemon并重启docker</h1>
+<pre><code>sudo systemctl enable docker.service
+sudo systemctl start docker.service
+</code></pre>
+<h1 id="_7">查看日志</h1>
+<pre><code>docker logs ID/Name
+如果要持续观察日志：
+docker logs -f ID/Name
+这个时候日志是从头开时读的，如果日志很长会刷屏很久，
+如果只打算看最新的日志可以采用以下的方式：
+docker logs --tail n -f  ID/Name
+</code></pre>
+<h1 id="_8">获取容器环境变量</h1>
+<pre><code>docker exec container_id env
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../tools/IntellijIdeaSwitchSVNPath/" class="btn btn-neutral float-right" title="idea">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../docker1/" class="btn btn-neutral" title="docker常用命令"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../docker1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../tools/IntellijIdeaSwitchSVNPath/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

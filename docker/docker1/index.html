@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>docker常用命令 - 笔记记录</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "docker常用命令";
+    var mkdocs_page_input_path = "docker\docker1.md";
+    var mkdocs_page_url = "/docker/docker1/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> 笔记记录</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Java</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../java/javaArray/">数组</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../java/javaRandomString/">随机数</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Linux</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/centosInstallConfig/">Cento安装后配置</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/linuxSkills/">常用总结</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/linuxMountDisk/">挂载硬盘</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../linux/linuxNetworkConfig/">网络配置</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Git</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../git/git1/">技巧</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../git/git2/">基本使用</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Docker</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">docker常用命令</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#dockerversioninfo">查看docker信息（version、info）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#imagesearchpullimagesrmihistory">对image的操作（search、pull、images、rmi、history）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#run">启动容器（run）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ps">查看容器（ps）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#commit">保存对容器的修改（commit）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#rmstopstartkilllogsdifftopcprestartattach">对容器的操作（rm、stop、start、kill、logs、diff、top、cp、restart、attach）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#saveload">保存和加载镜像（save、load）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#registry-serverlogin">登录registry server（login）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#imagepush">发布image（push）</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#dockerfile">根据Dockerfile 构建出一个容器</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../docker2/">docker基本命令使用</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>工具</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/IntellijIdeaSwitchSVNPath/">idea</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">笔记记录</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Docker &raquo;</li>
+        
+      
+    
+    <li>docker常用命令</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="dockerversioninfo">查看docker信息（version、info）</h2>
+<pre><code>    # 查看docker版本  
+    $docker version  
+    # 显示docker系统的信息  
+    $docker info
+</code></pre>
+<h2 id="imagesearchpullimagesrmihistory">对image的操作（search、pull、images、rmi、history）</h2>
+<pre><code>    # 检索image  
+    $docker search image_name  
+    # 下载image  
+    $docker pull image_name  
+    # 列出镜像列表; -a, --all=false Show all images; --no-trunc=false Don't truncate output; -q, --quiet=false Only show numeric IDs  
+    $docker images  
+    # 删除一个或者多个镜像; -f, --force=false Force; --no-prune=false Do not delete untagged parents  
+    $docker rmi image_name  
+    # 显示一个镜像的历史; --no-trunc=false Don't truncate output; -q, --quiet=false Only show numeric IDs  
+    $docker history image_name
+</code></pre>
+<h2 id="run">启动容器（run）</h2>
+<pre><code>docker容器可以理解为在沙盒中运行的进程。这个沙盒包含了该进程运行所必须的资源，包括文件系统、系统类库、shell 环境等等。但这个沙盒默认是不会运行任何程序的。你需要在沙盒中运行一个进程来启动某一个容器。这个进程是该容器的唯一进程，所以当该进程结束的时候，容器也会完全的停止。
+
+    # 在容器中运行"echo"命令，输出"hello word"  
+    $docker run image_name echo "hello word"
+
+    # 交互式进入容器中  
+    $docker run -i -t image_name /bin/bash  
+    * -i：表示以“交互模式”运行容器
+    * -t：表示容器启动后会进入其命令行
+    * -v：表示需要将本地哪个目录挂载到容器中，格式：-v &lt;宿主机目录&gt;:&lt;容器目录&gt;  
+    * 假设我们的所有安装程序都放在了宿主机的/root/software/目录下，现在需要将其挂载到容器的/mnt/software/目录下。
+
+
+    # 在容器中安装新的程序  
+    $docker run image_name apt-get install -y app_name
+
+
+Note：  在执行apt-get 命令的时候，要带上-y参数。如果不指定-y参数的话，apt-get命令会进入交互模式，需要用户输入命令来进行确认，但在docker环境中是无法响应这种交互的。apt-get 命令执行完毕之后，容器就会停止，但对容器的改动不会丢失。
+</code></pre>
+<h2 id="ps">查看容器（ps）</h2>
+<pre><code>    # 列出当前所有正在运行的container  
+    $docker ps  
+    # 列出所有的container  
+    $docker ps -a  
+    # 列出最近一次启动的container  
+    $docker ps -l
+</code></pre>
+<h2 id="commit">保存对容器的修改（commit）</h2>
+<pre><code>当你对某一个容器做了修改之后（通过在容器中运行某一个命令），可以把对容器的修改保存下来，这样下次可以从保存后的最新状态运行该容器。
+
+    # 保存对容器的修改; -a, --author="" Author; -m, --message="" Commit message  
+    $docker commit ID new_image_name
+
+
+Note：image相当于类，container相当于实例，不过可以动态给实例安装新软件，然后把这个container用commit命令固化成一个image。
+</code></pre>
+<h2 id="rmstopstartkilllogsdifftopcprestartattach">对容器的操作（rm、stop、start、kill、logs、diff、top、cp、restart、attach）</h2>
+<pre><code>    # 删除所有容器  
+    $docker rm `docker ps -a -q`
+
+    # 删除单个容器; -f, --force=false; -l, --link=false Remove the specified link and not the underlying container; -v, --volumes=false Remove the volumes associated to the container  
+    $docker rm Name/ID
+
+    # 停止、启动、杀死一个容器  
+    $docker stop Name/ID  
+    $docker start Name/ID  
+    $docker kill Name/ID
+
+    # 从一个容器中取日志; -f, --follow=false Follow log output; -t, --timestamps=false Show timestamps  
+    $docker logs Name/ID
+
+    # 列出一个容器里面被改变的文件或者目录，list列表会显示出三种事件，A 增加的，D 删除的，C 被改变的  
+    $docker diff Name/ID
+
+    # 显示一个运行的容器里面的进程信息  
+    $docker top Name/ID
+
+    # 从容器里面拷贝文件/目录到本地一个路径  
+    $docker cp Name:/container_path to_path  
+    $docker cp ID:/container_path to_path
+
+    # 重启一个正在运行的容器; -t, --time=10 Number of seconds to try to stop for before killing the container, Default=10  
+    $docker restart Name/ID
+
+    # 附加到一个运行的容器上面; --no-stdin=false Do not attach stdin; --sig-proxy=true Proxify all received signal to the process  
+    $docker attach ID
+
+
+Note： attach命令允许你查看或者影响一个运行的容器。你可以在同一时间attach同一个容器。你也可以从一个容器中脱离出来，是从CTRL-C。
+</code></pre>
+<h2 id="saveload">保存和加载镜像（save、load）</h2>
+<pre><code>当需要把一台机器上的镜像迁移到另一台机器的时候，需要保存镜像与加载镜像。
+
+    # 保存镜像到一个tar包; -o, --output="" Write to an file  
+    $docker save image_name -o file_path  
+    # 加载一个tar包格式的镜像; -i, --input="" Read from a tar archive file  
+    $docker load -i file_path
+
+    # 机器a  
+    $docker save image_name &gt; /home/save.tar  
+    # 使用scp将save.tar拷到机器b上，然后：  
+    $docker load &lt; /home/save.tar
+</code></pre>
+<h2 id="registry-serverlogin">登录registry server（login）</h2>
+<pre><code>    # 登陆registry server; -e, --email="" Email; -p, --password="" Password; -u, --username="" Username  
+    $docker login
+</code></pre>
+<h2 id="imagepush">发布image（push）</h2>
+<pre><code>    # 发布docker镜像  
+    $docker push new_image_name
+</code></pre>
+<h2 id="dockerfile">根据Dockerfile 构建出一个容器</h2>
+<pre><code>    #build  
+    --no-cache=false Do not use cache when building the image  
+    -q, --quiet=false Suppress the verbose output generated by the containers  
+    --rm=true Remove intermediate containers after a successful build  
+    -t, --tag="" Repository name (and optionally a tag) to be applied to the resulting image in case of success  
+    $docker build -t image_name Dockerfile_path
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../docker2/" class="btn btn-neutral float-right" title="docker基本命令使用">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../git/git2/" class="btn btn-neutral" title="基本使用"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../git/git2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../docker2/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

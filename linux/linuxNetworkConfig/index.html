@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>网络配置 - 笔记记录</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "网络配置";
+    var mkdocs_page_input_path = "linux\linuxNetworkConfig.md";
+    var mkdocs_page_url = "/linux/linuxNetworkConfig/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> 笔记记录</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Java</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../java/javaArray/">数组</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../java/javaRandomString/">随机数</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Linux</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../centosInstallConfig/">Cento安装后配置</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../linuxSkills/">常用总结</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../linuxMountDisk/">挂载硬盘</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">网络配置</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#linuxipdns">Linux修改IP地址DNS服务器等网络设置</a></li>
+                
+                    <li><a class="toctree-l4" href="#ip">修改ip地址</a></li>
+                
+                    <li><a class="toctree-l4" href="#_1">修改网关</a></li>
+                
+                    <li><a class="toctree-l4" href="#dns">修改DNS服务器</a></li>
+                
+                    <li><a class="toctree-l4" href="#_2">重新启动网络配置</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Git</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../git/git1/">技巧</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../git/git2/">基本使用</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Docker</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../docker/docker1/">docker常用命令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../docker/docker2/">docker基本命令使用</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>工具</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/IntellijIdeaSwitchSVNPath/">idea</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">笔记记录</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Linux &raquo;</li>
+        
+      
+    
+    <li>网络配置</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linuxipdns">Linux修改IP地址DNS服务器等网络设置</h1>
+<h2 id="ip">修改ip地址</h2>
+<pre><code>vi /etc/sysconfig/network-scripts/ifcfg-eth0
+
+//修改对应网卡的ip地址的配置文件如果你有多个网卡那么ifcfg-eth就有多个，你可以连续按俩次Tab键查看
+# Intel Corporation 82545EM Gigabit Ethernet Controller (Copper)
+DEVICE=eth0    #描述网卡对应的设备别名，例如ifcfg-eth0的文件中它为eth0
+
+BOOTPROTO=static #设置网卡获得ip地址的方式，可能的选项为static，dhcp或bootp，分别对应静态指定的 ip地址，通过dhcp协议获得的ip地址，通过bootp协议获得的ip地址
+
+HWADDR=00:0C:29:0C:B1:00  #（物理地址）对应的网卡物理地址
+
+IPADDR=192.168.2.160  #（IPv4地址）如果设置网卡获得 ip地址的方式为静态指定，此字段就指定了网卡对应的ip地址
+NETMASK=255.255.255.0　　#（子网掩码）网卡对应的网络掩码
+
+ONBOOT=yes #系统启动时是否设置此网络接口，设置为yes时，系统启动时激活此设备
+#（下面的是可以不填写的）
+BROADCAST=192.168.2.255 #对应的子网广播地址
+NETWORK=192.168.2.0　　#（网关）网卡对应的网络地址
+IPV6INIT=no
+IPV6_AUTOCONF=no
+</code></pre>
+<h2 id="_1">修改网关</h2>
+<pre><code>vi /etc/sysconfig/network
+
+NETWORKING=yes #表示系统是否使用IPV4网络，一般设置为yes。如果设为no，则不能使用网络，而且很多系统服务程序将无法启动
+NETWORKING_IPV6=no  #不懂IPV4和IPV6的请百度科普
+HOSTNAME=L160  #设置本机的主机名，这里设置的主机名要和/etc/hosts中设置的主机名对应
+GATEWAY=192.168.2.1  #设置本机连接的网关的IP地址
+</code></pre>
+<h2 id="dns">修改DNS服务器</h2>
+<pre><code>vi /etc/resolv.conf
+
+#这个域名服务器可以换成你本地的，好处是网络访问要快上那么一点点
+search localdomain
+nameserver 8.8.8.8 #（主）google域名服务器
+nameserver 8.8.4.4 #（从）google域名服务器
+</code></pre>
+<h2 id="_2">重新启动网络配置</h2>
+<pre><code>service network restart
+/etc/init.d/network restart
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../git/git1/" class="btn btn-neutral float-right" title="技巧">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../linuxMountDisk/" class="btn btn-neutral" title="挂载硬盘"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../linuxMountDisk/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../git/git1/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
