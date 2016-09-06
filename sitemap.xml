@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>None/java/javaArray/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/java/javaRandomString/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,25 +29,25 @@
         
     <url>
      <loc>None/linux/centosInstallConfig/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/linux/linuxSkills/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/linux/linuxMountDisk/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/linux/linuxNetworkConfig/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -57,13 +57,13 @@
         
     <url>
      <loc>None/git/git1/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/git/git2/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -73,13 +73,13 @@
         
     <url>
      <loc>None/docker/docker1/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/docker/docker2/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -89,13 +89,23 @@
         
     <url>
      <loc>None/tools/IntellijIdeaSwitchSVNPath/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/tools/IntellijIDEAKeyMap/</loc>
-     <lastmod>2016-09-04</lastmod>
+     <lastmod>2016-09-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/arithmetic/guoyediaoqiao/</loc>
+     <lastmod>2016-09-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
