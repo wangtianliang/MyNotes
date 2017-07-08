@@ -9,6 +9,8 @@ pages:
     - 常用总结: linux/linuxSkills.md
     - 挂载硬盘: linux/linuxMountDisk.md
     - 网络配置: linux/linuxNetworkConfig.md
+- JavaScript:
+    - Map使用: js/jsmap.md
 - Git:
     - 技巧: git/git1.md
     - 基本使用: git/git2.md
@@ -18,7 +20,5 @@ pages:
 - 工具:
     - idea: tools/IntellijIdeaSwitchSVNPath.md
     - idea快捷键: tools/IntellijIDEAKeyMap.md
-- 算法:
-    - 过夜吊桥: arithmetic/guoyediaoqiao.md
 
 theme: readthedocs
