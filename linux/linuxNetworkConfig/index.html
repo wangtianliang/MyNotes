@@ -7,32 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  
-  <title>网络配置 - 笔记记录</title>
-  
-
   <link rel="shortcut icon" href="../../img/favicon.ico">
-
-  
+  <title>网络配置 - 笔记记录</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../../css/highlight.css">
-
   
   <script>
     // Current page data
-    var mkdocs_page_name = "网络配置";
-    var mkdocs_page_input_path = "linux\linuxNetworkConfig.md";
+    var mkdocs_page_name = "\u7f51\u7edc\u914d\u7f6e";
+    var mkdocs_page_input_path = "linux\\linuxNetworkConfig.md";
     var mkdocs_page_url = "/linux/linuxNetworkConfig/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
   <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
-  <script src="../../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -52,168 +44,125 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Java</span>
     <ul class="subnav">
-    <li><span>Java</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../java/javaArray/">数组</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../java/javaRandomString/">随机数</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../java/javaArray/">数组</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../java/javaRandomString/">随机数</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Linux</span>
     <ul class="subnav">
-    <li><span>Linux</span></li>
+                <li class="">
+                    
+    <a class="" href="../centosInstallConfig/">Cento安装后配置</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../linuxSkills/">常用总结</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../linuxMountDisk/">挂载硬盘</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">网络配置</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#linuxipdns">Linux修改IP地址DNS服务器等网络设置</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#ip">修改ip地址</a></li>
+        
+            <li><a class="toctree-l4" href="#_1">修改网关</a></li>
+        
+            <li><a class="toctree-l4" href="#dns">修改DNS服务器</a></li>
+        
+            <li><a class="toctree-l4" href="#_2">重新启动网络配置</a></li>
+        
+        </ul>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../centosInstallConfig/">Cento安装后配置</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../linuxSkills/">常用总结</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../linuxMountDisk/">挂载硬盘</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">网络配置</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#linuxipdns">Linux修改IP地址DNS服务器等网络设置</a></li>
-                
-                    <li><a class="toctree-l4" href="#ip">修改ip地址</a></li>
-                
-                    <li><a class="toctree-l4" href="#_1">修改网关</a></li>
-                
-                    <li><a class="toctree-l4" href="#dns">修改DNS服务器</a></li>
-                
-                    <li><a class="toctree-l4" href="#_2">重新启动网络配置</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
     </ul>
-<li>
+                </li>
+    </ul>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">JavaScript</span>
     <ul class="subnav">
-    <li><span>Git</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../git/git1/">技巧</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../git/git2/">基本使用</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../js/jsmap/">Map使用</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Git</span>
     <ul class="subnav">
-    <li><span>Docker</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../docker/docker1/">docker常用命令</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../docker/docker2/">docker基本命令使用</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../git/git1/">技巧</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../git/git2/">基本使用</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Docker</span>
     <ul class="subnav">
-    <li><span>工具</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/IntellijIdeaSwitchSVNPath/">idea</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/IntellijIDEAKeyMap/">idea快捷键</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../docker/docker1/">docker常用命令</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../docker/docker2/">docker基本命令使用</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">工具</span>
     <ul class="subnav">
-    <li><span>算法</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../arithmetic/guoyediaoqiao/">过夜吊桥</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../tools/IntellijIdeaSwitchSVNPath/">idea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/IntellijIDEAKeyMap/">idea快捷键</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
         </ul>
       </div>
@@ -300,7 +249,7 @@ nameserver 8.8.4.4 #（从）google域名服务器
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../git/git1/" class="btn btn-neutral float-right" title="技巧">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../js/jsmap/" class="btn btn-neutral float-right" title="Map使用">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../linuxMountDisk/" class="btn btn-neutral" title="挂载硬盘"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -322,20 +271,21 @@ nameserver 8.8.4.4 #（从）google域名服务器
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
         <span><a href="../linuxMountDisk/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../git/git1/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../js/jsmap/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
+    <script src="../../js/theme.js"></script>
 
 </body>
 </html>

@@ -7,32 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  
-  <title>docker常用命令 - 笔记记录</title>
-  
-
   <link rel="shortcut icon" href="../../img/favicon.ico">
-
-  
+  <title>docker常用命令 - 笔记记录</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../../css/highlight.css">
-
   
   <script>
     // Current page data
-    var mkdocs_page_name = "docker常用命令";
-    var mkdocs_page_input_path = "docker\docker1.md";
+    var mkdocs_page_name = "docker\u5e38\u7528\u547d\u4ee4";
+    var mkdocs_page_input_path = "docker\\docker1.md";
     var mkdocs_page_url = "/docker/docker1/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
   <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
-  <script src="../../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -52,187 +44,140 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Java</span>
     <ul class="subnav">
-    <li><span>Java</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../java/javaArray/">数组</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../java/javaRandomString/">随机数</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../java/javaArray/">数组</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../java/javaRandomString/">随机数</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Linux</span>
     <ul class="subnav">
-    <li><span>Linux</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../linux/centosInstallConfig/">Cento安装后配置</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../linux/linuxSkills/">常用总结</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../linux/linuxMountDisk/">挂载硬盘</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../linux/linuxNetworkConfig/">网络配置</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../linux/centosInstallConfig/">Cento安装后配置</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../linux/linuxSkills/">常用总结</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../linux/linuxMountDisk/">挂载硬盘</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../linux/linuxNetworkConfig/">网络配置</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">JavaScript</span>
     <ul class="subnav">
-    <li><span>Git</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../git/git1/">技巧</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../git/git2/">基本使用</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../js/jsmap/">Map使用</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Git</span>
     <ul class="subnav">
-    <li><span>Docker</span></li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">docker常用命令</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#dockerversioninfo">查看docker信息（version、info）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#imagesearchpullimagesrmihistory">对image的操作（search、pull、images、rmi、history）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#run">启动容器（run）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#ps">查看容器（ps）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#commit">保存对容器的修改（commit）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#rmstopstartkilllogsdifftopcprestartattach">对容器的操作（rm、stop、start、kill、logs、diff、top、cp、restart、attach）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#saveload">保存和加载镜像（save、load）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#registry-serverlogin">登录registry server（login）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#imagepush">发布image（push）</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#dockerfile">根据Dockerfile 构建出一个容器</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../docker2/">docker基本命令使用</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../git/git1/">技巧</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../git/git2/">基本使用</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Docker</span>
     <ul class="subnav">
-    <li><span>工具</span></li>
-
-        
+                <li class=" current">
+                    
+    <a class="current" href="./">docker常用命令</a>
+    <ul class="subnav">
             
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/IntellijIdeaSwitchSVNPath/">idea</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#dockerversioninfo">查看docker信息（version、info）</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/IntellijIDEAKeyMap/">idea快捷键</a>
-        
-    </li>
+    <li class="toctree-l3"><a href="#imagesearchpullimagesrmihistory">对image的操作（search、pull、images、rmi、history）</a></li>
+    
 
-        
+    <li class="toctree-l3"><a href="#run">启动容器（run）</a></li>
+    
+
+    <li class="toctree-l3"><a href="#ps">查看容器（ps）</a></li>
+    
+
+    <li class="toctree-l3"><a href="#commit">保存对容器的修改（commit）</a></li>
+    
+
+    <li class="toctree-l3"><a href="#rmstopstartkilllogsdifftopcprestartattach">对容器的操作（rm、stop、start、kill、logs、diff、top、cp、restart、attach）</a></li>
+    
+
+    <li class="toctree-l3"><a href="#saveload">保存和加载镜像（save、load）</a></li>
+    
+
+    <li class="toctree-l3"><a href="#registry-serverlogin">登录registry server（login）</a></li>
+    
+
+    <li class="toctree-l3"><a href="#imagepush">发布image（push）</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dockerfile">根据Dockerfile 构建出一个容器</a></li>
+    
+
     </ul>
-<li>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../docker2/">docker基本命令使用</a>
+                </li>
+    </ul>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">工具</span>
     <ul class="subnav">
-    <li><span>算法</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../arithmetic/guoyediaoqiao/">过夜吊桥</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../tools/IntellijIdeaSwitchSVNPath/">idea</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tools/IntellijIDEAKeyMap/">idea快捷键</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
         </ul>
       </div>
@@ -417,10 +362,10 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -431,6 +376,7 @@ Note： attach命令允许你查看或者影响一个运行的容器。你可以
       
     </span>
 </div>
+    <script src="../../js/theme.js"></script>
 
 </body>
 </html>

@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "\u4ecb\u7ecd\n\n\n\u672c\u6587\u4e3b\u8981\u8bb0\u5f55\u5e73\u65f6\u5e38\u7528\u7684\u4fe1\u606f\u548c\u4e00\u4e9b\u5751\u7684\u89e3\u51b3\u529e\u6cd5\u3002", 
+            "text": "\u4ecb\u7ecd\n\n\n\u672c\u6587\u4e3b\u8981\u8bb0\u5f55\u5e73\u65f6\u5e38\u7528\u7684\u4fe1\u606f\u548c\u4e00\u4e9b\u6280\u5de7\u3002", 
             "title": "Home"
         }, 
         {
             "location": "/#_1", 
-            "text": "\u672c\u6587\u4e3b\u8981\u8bb0\u5f55\u5e73\u65f6\u5e38\u7528\u7684\u4fe1\u606f\u548c\u4e00\u4e9b\u5751\u7684\u89e3\u51b3\u529e\u6cd5\u3002", 
+            "text": "\u672c\u6587\u4e3b\u8981\u8bb0\u5f55\u5e73\u65f6\u5e38\u7528\u7684\u4fe1\u606f\u548c\u4e00\u4e9b\u6280\u5de7\u3002", 
             "title": "\u4ecb\u7ecd"
         }, 
         {
@@ -104,6 +104,26 @@
             "location": "/linux/linuxNetworkConfig/#_2", 
             "text": "service network restart\n/etc/init.d/network restart", 
             "title": "\u91cd\u65b0\u542f\u52a8\u7f51\u7edc\u914d\u7f6e"
+        }, 
+        {
+            "location": "/js/jsmap/", 
+            "text": "Map\u5728js\u4e2d\u7684\u4f7f\u7528\n\n\n\u521b\u5efa\u4e00\u4e2a\u65b0\u6570\u7ec4\uff0c\u5176\u7ed3\u679c\u662f\u8be5\u6570\u7ec4\u4e2d\u7684\u6bcf\u4e2a\u5143\u7d20\u90fd\u8c03\u7528\u4e00\u4e2a\u63d0\u4f9b\u7684\u51fd\u6570\u540e\u8fd4\u56de\u7684\u7ed3\u679c\n\n\njs\u65b9\u6cd5\n\n\nvar datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = datas.map(function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});\n\n\n\n\u5177\u4f53\u4f7f\u7528\u8be6\u60c5\u8bf7\u53c2\u8003\uff1a\nhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map\n\n\nJQuery\u65b9\u6cd5\n\n\nvar datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = $.map(datas,function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});", 
+            "title": "Map\u4f7f\u7528"
+        }, 
+        {
+            "location": "/js/jsmap/#mapjs", 
+            "text": "\u521b\u5efa\u4e00\u4e2a\u65b0\u6570\u7ec4\uff0c\u5176\u7ed3\u679c\u662f\u8be5\u6570\u7ec4\u4e2d\u7684\u6bcf\u4e2a\u5143\u7d20\u90fd\u8c03\u7528\u4e00\u4e2a\u63d0\u4f9b\u7684\u51fd\u6570\u540e\u8fd4\u56de\u7684\u7ed3\u679c", 
+            "title": "Map\u5728js\u4e2d\u7684\u4f7f\u7528"
+        }, 
+        {
+            "location": "/js/jsmap/#js", 
+            "text": "var datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = datas.map(function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});  \u5177\u4f53\u4f7f\u7528\u8be6\u60c5\u8bf7\u53c2\u8003\uff1a https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map", 
+            "title": "js\u65b9\u6cd5"
+        }, 
+        {
+            "location": "/js/jsmap/#jquery", 
+            "text": "var datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = $.map(datas,function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});", 
+            "title": "JQuery\u65b9\u6cd5"
         }, 
         {
             "location": "/git/git1/", 
@@ -279,21 +299,6 @@
             "location": "/tools/IntellijIDEAKeyMap/#vcs", 
             "text": "Alt+~\uff0cVCS \u64cd\u4f5c\u83dc\u5355\nCtrl+K\uff0c\u63d0\u4ea4\u66f4\u6539\nCtrl+T\uff0c\u66f4\u65b0\u9879\u76ee\nCtrl+Alt+Shift+D\uff0c\u663e\u793a\u53d8\u5316", 
             "title": "VCS"
-        }, 
-        {
-            "location": "/arithmetic/guoyediaoqiao/", 
-            "text": "\u591c\u8fc7\u540a\u6865\n\n\n\u95ee\u9898\u63cf\u8ff0\n\n\n1.\u4e94\u4e2a\u4eba\u6253\u7b97\u8fc7\u4e00\u5ea7\u540a\u6865\uff0c\u5f00\u59cb\u65f6\u4ed6\u4eec\u90fd\u4f4d\u4e8e\u8be5\u6865\u7684\u4e00\u4fa7\u3002\n\n2.\u5929\u5f88\u9ed1\uff0c\u4e94\u4e2a\u4eba\u624b\u91cc\u53ea\u6709\u4e00\u4e2a\u624b\u7535\u7b52\u3002\n\n3.\u8be5\u6865\u4e00\u6b21\u6700\u591a\u53ea\u80fd\u540c\u65f6\u8fc7\u4e24\u4e2a\u4eba\uff0c\u65e0\u8bba\u662f\u4e00\u4e2a\u4eba\u8fd8\u662f\u4e24\u4e2a\u4eba\u8fc7\u6865\uff0c\u90fd\u9700\u8981\u643a\u5e26\u624b\u7535\u7b52\u770b\u8def\u3002\u800c\u4e14\u624b\u7535\u7b52\u53ea\u80fd\u901a\u8fc7\u4eba\u643a\u5e26\u8fc7\u6865\u7684\u65b9\u5f0f\u4f20\u9012\u3002\n\n4.\u7b2c\u4e00\u4e2a\u4eba\u8fc7\u6865\u9700\u89811\u5206\u949f\u65f6\u95f4\uff0c\u7b2c\u4e8c\u4e2a\u4eba\u8fc7\u6865\u9700\u89812\u5206\u949f\uff0c\u7b2c\u4e09\u4e2a\u4eba\u9700\u89815\u5206\u949f\uff0c\u7b2c\u56db\u4e2a\u9700\u89817\u5206\u949f\uff0c\u7b2c\u4e94\u4e2a\u9700\u898110\u5206\u949f\u3002\u7531\u4e8e\u901f\u5ea6\u4e0d\u540c\uff0c\u4e24\u4e2a\u4eba\u4e00\u8d77\u8fc7\u6865\u7684\u8bdd\uff0c\u901f\u5ea6\u4ee5\u6162\u7684\u4eba\u4e3a\u51c6\u3002\n\n\n\n\u95ee\u9898\uff1a\u6c42\u6700\u5feb\u8fc7\u6865\u65f6\u95f4\u3002\u8981\u6c42\u5199\u51fa\u6c42\u89e3\u7684\u7b97\u6cd5\u3002", 
-            "title": "\u8fc7\u591c\u540a\u6865"
-        }, 
-        {
-            "location": "/arithmetic/guoyediaoqiao/#_1", 
-            "text": "", 
-            "title": "\u591c\u8fc7\u540a\u6865"
-        }, 
-        {
-            "location": "/arithmetic/guoyediaoqiao/#_2", 
-            "text": "1.\u4e94\u4e2a\u4eba\u6253\u7b97\u8fc7\u4e00\u5ea7\u540a\u6865\uff0c\u5f00\u59cb\u65f6\u4ed6\u4eec\u90fd\u4f4d\u4e8e\u8be5\u6865\u7684\u4e00\u4fa7\u3002\n\n2.\u5929\u5f88\u9ed1\uff0c\u4e94\u4e2a\u4eba\u624b\u91cc\u53ea\u6709\u4e00\u4e2a\u624b\u7535\u7b52\u3002\n\n3.\u8be5\u6865\u4e00\u6b21\u6700\u591a\u53ea\u80fd\u540c\u65f6\u8fc7\u4e24\u4e2a\u4eba\uff0c\u65e0\u8bba\u662f\u4e00\u4e2a\u4eba\u8fd8\u662f\u4e24\u4e2a\u4eba\u8fc7\u6865\uff0c\u90fd\u9700\u8981\u643a\u5e26\u624b\u7535\u7b52\u770b\u8def\u3002\u800c\u4e14\u624b\u7535\u7b52\u53ea\u80fd\u901a\u8fc7\u4eba\u643a\u5e26\u8fc7\u6865\u7684\u65b9\u5f0f\u4f20\u9012\u3002\n\n4.\u7b2c\u4e00\u4e2a\u4eba\u8fc7\u6865\u9700\u89811\u5206\u949f\u65f6\u95f4\uff0c\u7b2c\u4e8c\u4e2a\u4eba\u8fc7\u6865\u9700\u89812\u5206\u949f\uff0c\u7b2c\u4e09\u4e2a\u4eba\u9700\u89815\u5206\u949f\uff0c\u7b2c\u56db\u4e2a\u9700\u89817\u5206\u949f\uff0c\u7b2c\u4e94\u4e2a\u9700\u898110\u5206\u949f\u3002\u7531\u4e8e\u901f\u5ea6\u4e0d\u540c\uff0c\u4e24\u4e2a\u4eba\u4e00\u8d77\u8fc7\u6865\u7684\u8bdd\uff0c\u901f\u5ea6\u4ee5\u6162\u7684\u4eba\u4e3a\u51c6\u3002  \u95ee\u9898\uff1a\u6c42\u6700\u5feb\u8fc7\u6865\u65f6\u95f4\u3002\u8981\u6c42\u5199\u51fa\u6c42\u89e3\u7684\u7b97\u6cd5\u3002", 
-            "title": "\u95ee\u9898\u63cf\u8ff0"
         }
     ]
 }

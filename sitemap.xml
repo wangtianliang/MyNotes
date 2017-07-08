@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,42 +12,14 @@
     
         
     <url>
-     <loc>None/java/javaArray/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/java/javaArray/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/java/javaRandomString/</loc>
-     <lastmod>2016-09-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/linux/centosInstallConfig/</loc>
-     <lastmod>2016-09-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/linux/linuxSkills/</loc>
-     <lastmod>2016-09-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/linux/linuxMountDisk/</loc>
-     <lastmod>2016-09-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/linux/linuxNetworkConfig/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/java/javaRandomString/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -56,30 +28,26 @@
     
         
     <url>
-     <loc>None/git/git1/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/linux/centosInstallConfig/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/git/git2/</loc>
-     <lastmod>2016-09-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/docker/docker1/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/linux/linuxSkills/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/docker/docker2/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/linux/linuxMountDisk/</loc>
+     <lastmod>2017-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/linux/linuxNetworkConfig/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -88,14 +56,8 @@
     
         
     <url>
-     <loc>None/tools/IntellijIdeaSwitchSVNPath/</loc>
-     <lastmod>2016-09-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/tools/IntellijIDEAKeyMap/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/js/jsmap/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -104,8 +66,46 @@
     
         
     <url>
-     <loc>None/arithmetic/guoyediaoqiao/</loc>
-     <lastmod>2016-09-06</lastmod>
+     <loc>/git/git1/</loc>
+     <lastmod>2017-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/git/git2/</loc>
+     <lastmod>2017-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/docker/docker1/</loc>
+     <lastmod>2017-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/docker/docker2/</loc>
+     <lastmod>2017-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/tools/IntellijIdeaSwitchSVNPath/</loc>
+     <lastmod>2017-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tools/IntellijIDEAKeyMap/</loc>
+     <lastmod>2017-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
