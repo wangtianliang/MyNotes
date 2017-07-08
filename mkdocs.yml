@@ -4,13 +4,18 @@ pages:
 - Java: 
     - 数组: java/javaArray.md
     - 随机数: java/javaRandomString.md
+- JavaScript:
+    - Map使用: js/jsmap.md
+- 数据库:
+    - MySQL:
+        - 常用函数: database/MySQL/mysqlFunctions.md
+    - Oracle:
+        - 常用函数: database/Oracle/oracleFunctions.md
 - Linux: 
     - Cento安装后配置: linux/centosInstallConfig.md
     - 常用总结: linux/linuxSkills.md
     - 挂载硬盘: linux/linuxMountDisk.md
     - 网络配置: linux/linuxNetworkConfig.md
-- JavaScript:
-    - Map使用: js/jsmap.md
 - Git:
     - 技巧: git/git1.md
     - 基本使用: git/git2.md
