@@ -51,6 +51,71 @@
             "title": "\u4f18\u7f3a\u70b9\u6bd4\u8f83"
         }, 
         {
+            "location": "/js/jsmap/", 
+            "text": "Map\u5728js\u4e2d\u7684\u4f7f\u7528\n\n\n\u521b\u5efa\u4e00\u4e2a\u65b0\u6570\u7ec4\uff0c\u5176\u7ed3\u679c\u662f\u8be5\u6570\u7ec4\u4e2d\u7684\u6bcf\u4e2a\u5143\u7d20\u90fd\u8c03\u7528\u4e00\u4e2a\u63d0\u4f9b\u7684\u51fd\u6570\u540e\u8fd4\u56de\u7684\u7ed3\u679c\n\n\njs\u65b9\u6cd5\n\n\nvar datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = datas.map(function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});\n\n\n\n\u5177\u4f53\u4f7f\u7528\u8be6\u60c5\u8bf7\u53c2\u8003\uff1a\nhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map\n\n\nJQuery\u65b9\u6cd5\n\n\nvar datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = $.map(datas,function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});", 
+            "title": "Map\u4f7f\u7528"
+        }, 
+        {
+            "location": "/js/jsmap/#mapjs", 
+            "text": "\u521b\u5efa\u4e00\u4e2a\u65b0\u6570\u7ec4\uff0c\u5176\u7ed3\u679c\u662f\u8be5\u6570\u7ec4\u4e2d\u7684\u6bcf\u4e2a\u5143\u7d20\u90fd\u8c03\u7528\u4e00\u4e2a\u63d0\u4f9b\u7684\u51fd\u6570\u540e\u8fd4\u56de\u7684\u7ed3\u679c", 
+            "title": "Map\u5728js\u4e2d\u7684\u4f7f\u7528"
+        }, 
+        {
+            "location": "/js/jsmap/#js", 
+            "text": "var datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = datas.map(function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});  \u5177\u4f53\u4f7f\u7528\u8be6\u60c5\u8bf7\u53c2\u8003\uff1a https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map", 
+            "title": "js\u65b9\u6cd5"
+        }, 
+        {
+            "location": "/js/jsmap/#jquery", 
+            "text": "var datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = $.map(datas,function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});", 
+            "title": "JQuery\u65b9\u6cd5"
+        }, 
+        {
+            "location": "/js/easyui/", 
+            "text": "EasyUI\u4f7f\u7528\u6280\u5de7\n\n\n\u603b\u7ed3\u65e5\u5e38EasyUI\u4f7f\u7528\u7684\u5c0f\u6280\u5de7\n\n\nselect\u6807\u7b7e\u5728EasyUI\u4e2d\u7684\u4f7f\u7528\n\n\nselect id=\"elementId\" class=\"easyui-combobox\" data-options=\"onChange:initSelect,editable:false\"\n/select\n\n\n\n\n\u7ed9ID\u4e3aelementId\u52a8\u6001\u8d4b\u503c\n\n\n\n\n\n\n\u65b9\u5f0f\u4e00\uff1a\n\n\nfunction initSelect(){\n    $(\"#elementId\").combobox('clear');\n    var options = $(\"#elementId\").combobox('options');\n    options.textField= \"pch\";\n    options.valueField=\"pch\";\n    $(\"#elementId\").combobox('loadData',data);\n}\n\n\n\n\n\n\n\n\u65b9\u5f0f\u4e8c\uff1a\n\n\nfunction initSelect(){\n    $(\"#elementId\").combobox('clear');       \n    if(data.length\n0){\n        $(\"#elementId\").combobox({\n            valueField:\"pch\",\n            textField:\"pch\",\n            value:data[0].pch,\n        }).combobox(\"loadData\",data);\n    }\n}", 
+            "title": "EasyUI\u6280\u5de7"
+        }, 
+        {
+            "location": "/js/easyui/#easyui", 
+            "text": "\u603b\u7ed3\u65e5\u5e38EasyUI\u4f7f\u7528\u7684\u5c0f\u6280\u5de7", 
+            "title": "EasyUI\u4f7f\u7528\u6280\u5de7"
+        }, 
+        {
+            "location": "/js/easyui/#selecteasyui", 
+            "text": "select id=\"elementId\" class=\"easyui-combobox\" data-options=\"onChange:initSelect,editable:false\" /select   \u7ed9ID\u4e3aelementId\u52a8\u6001\u8d4b\u503c    \u65b9\u5f0f\u4e00\uff1a  function initSelect(){\n    $(\"#elementId\").combobox('clear');\n    var options = $(\"#elementId\").combobox('options');\n    options.textField= \"pch\";\n    options.valueField=\"pch\";\n    $(\"#elementId\").combobox('loadData',data);\n}    \u65b9\u5f0f\u4e8c\uff1a  function initSelect(){\n    $(\"#elementId\").combobox('clear');       \n    if(data.length 0){\n        $(\"#elementId\").combobox({\n            valueField:\"pch\",\n            textField:\"pch\",\n            value:data[0].pch,\n        }).combobox(\"loadData\",data);\n    }\n}", 
+            "title": "select\u6807\u7b7e\u5728EasyUI\u4e2d\u7684\u4f7f\u7528"
+        }, 
+        {
+            "location": "/database/MySQL/mysqlFunctions/", 
+            "text": "MySQL\u5e38\u7528\u51fd\u6570\n\n\n\u67e5\u770b\u9501\u53ca\u89e3\u9664\u9501\n\n\n1.\u67e5\u8be2\u662f\u5426\u9501\u8868\n\n\nshow OPEN TABLES where In_use \n 0;\n\n\n\n2.\u67e5\u8be2\u8fdb\u7a0b\n\n\nshow processlist\n\u67e5\u8be2\u5230\u76f8\u5bf9\u5e94\u7684\u8fdb\u7a0b===\u7136\u540e kill    id\n\n\n\n3.\u67e5\u770b\u6b63\u5728\u9501\u7684\u4e8b\u52a1\n\n\nSELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;\n\n\n\n4.\u67e5\u770b\u7b49\u5f85\u9501\u7684\u4e8b\u52a1\n\n\nSELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;\n\n\n\n\u5b57\u6bb5\u8c03\u6574\n\n\n1.\u589e\u52a0\u4e00\u4e2a\u5b57\u6bb5\n\n\nalter table user add COLUMN new1 VARCHAR(20) DEFAULT NULL COMMENT '\u6ce8\u91ca' AFTER FIELD ; //\u589e\u52a0\u4e00\u4e2a\u5b57\u6bb5\uff0c\u9ed8\u8ba4\u4e3a\u7a7a\nalter table user add COLUMN new2 VARCHAR(20) NOT NULL;  //\u589e\u52a0\u4e00\u4e2a\u5b57\u6bb5\uff0c\u9ed8\u8ba4\u4e0d\u80fd\u4e3a\u7a7a  www.2cto.com\n\n\n\n2.\u5220\u9664\u4e00\u4e2a\u5b57\u6bb5\n\n\nalter table user DROP COLUMN new2; \u3000 //\u5220\u9664\u4e00\u4e2a\u5b57\u6bb5\n\n\n\n3.\u4fee\u6539\u4e00\u4e2a\u5b57\u6bb5\n\n\nalter table user MODIFY new1 VARCHAR(10); \u3000//\u4fee\u6539\u4e00\u4e2a\u5b57\u6bb5\u7684\u7c7b\u578b\n\nalter table user CHANGE new1 new4 int;\u3000 //\u4fee\u6539\u4e00\u4e2a\u5b57\u6bb5\u7684\u540d\u79f0\uff0c\u6b64\u65f6\u4e00\u5b9a\u8981\u91cd\u65b0\u6307\u5b9a\u8be5\u5b57\u6bb5\u7684\u7c7b\u578b", 
+            "title": "\u5e38\u7528\u51fd\u6570"
+        }, 
+        {
+            "location": "/database/MySQL/mysqlFunctions/#mysql", 
+            "text": "", 
+            "title": "MySQL\u5e38\u7528\u51fd\u6570"
+        }, 
+        {
+            "location": "/database/MySQL/mysqlFunctions/#_1", 
+            "text": "1.\u67e5\u8be2\u662f\u5426\u9501\u8868  show OPEN TABLES where In_use   0;  2.\u67e5\u8be2\u8fdb\u7a0b  show processlist\n\u67e5\u8be2\u5230\u76f8\u5bf9\u5e94\u7684\u8fdb\u7a0b===\u7136\u540e kill    id  3.\u67e5\u770b\u6b63\u5728\u9501\u7684\u4e8b\u52a1  SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;  4.\u67e5\u770b\u7b49\u5f85\u9501\u7684\u4e8b\u52a1  SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;", 
+            "title": "\u67e5\u770b\u9501\u53ca\u89e3\u9664\u9501"
+        }, 
+        {
+            "location": "/database/MySQL/mysqlFunctions/#_2", 
+            "text": "1.\u589e\u52a0\u4e00\u4e2a\u5b57\u6bb5  alter table user add COLUMN new1 VARCHAR(20) DEFAULT NULL COMMENT '\u6ce8\u91ca' AFTER FIELD ; //\u589e\u52a0\u4e00\u4e2a\u5b57\u6bb5\uff0c\u9ed8\u8ba4\u4e3a\u7a7a\nalter table user add COLUMN new2 VARCHAR(20) NOT NULL;  //\u589e\u52a0\u4e00\u4e2a\u5b57\u6bb5\uff0c\u9ed8\u8ba4\u4e0d\u80fd\u4e3a\u7a7a  www.2cto.com  2.\u5220\u9664\u4e00\u4e2a\u5b57\u6bb5  alter table user DROP COLUMN new2; \u3000 //\u5220\u9664\u4e00\u4e2a\u5b57\u6bb5  3.\u4fee\u6539\u4e00\u4e2a\u5b57\u6bb5  alter table user MODIFY new1 VARCHAR(10); \u3000//\u4fee\u6539\u4e00\u4e2a\u5b57\u6bb5\u7684\u7c7b\u578b\n\nalter table user CHANGE new1 new4 int;\u3000 //\u4fee\u6539\u4e00\u4e2a\u5b57\u6bb5\u7684\u540d\u79f0\uff0c\u6b64\u65f6\u4e00\u5b9a\u8981\u91cd\u65b0\u6307\u5b9a\u8be5\u5b57\u6bb5\u7684\u7c7b\u578b", 
+            "title": "\u5b57\u6bb5\u8c03\u6574"
+        }, 
+        {
+            "location": "/database/Oracle/oracleFunctions/", 
+            "text": "orace\u51fd\u6570\u4f7f\u7528\n\n\n\n\n\n\n\u65e5\u671f\u683c\u5f0f\u8f6c\u5316\u4e3a\u5b57\u7b26\u4e32\n\n\nselect to_char(sysdate,'yyyy-MM-dd hh24:mi:ss') from dual;\nselect to_char(sysdate,'yyyy-mm-dd hh24:mi:ss') as nowTime from dual;   //\u65e5\u671f\u8f6c\u5316\u4e3a\u5b57\u7b26\u4e32   \nselect to_char(sysdate,'yyyy') as nowYear   from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u5e74   \nselect to_char(sysdate,'mm')    as nowMonth from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u6708   \nselect to_char(sysdate,'dd')    as nowDay    from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u65e5   \nselect to_char(sysdate,'hh24') as nowHour   from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u65f6   \nselect to_char(sysdate,'mi')    as nowMinute from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u5206   \nselect to_char(sysdate,'ss')    as nowSecond from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u79d2\n\n\n\n\n\n\n\n\u5b57\u7b26\u4e32\u683c\u5f0f\u8f6c\u5316\u4e3a\u65e5\u671f\n\n\nselect to_date('20170304092103','yyyy-MM-dd hh24:mi:ss') from dual;\n\n\n\n\n\n\n\n\u67e5\u770bOracle\u4fe1\u606f\n\n\nselect * from dba_objects a where a.object_type= X and a.owner=''; //\u67e5\u770b\u6307\u5b9a\u7528\u6237\u4e0bX X\u4ee3\u8868\u8868(TABLE)\u3001\u89c6\u56fe(VIEW)\u3001\u5b58\u50a8\u8fc7\u7a0b(PROCEDURE)\u3001\u5305(PACKAGE)\u7b49\u7b49\n\n\n\n\n\n\n\nOracle\u5bfc\u5165\u5bfc\u51fa\u6570\u636e\u5e93\n\n\n#\u5bfc\u51fa\u6307\u4ee4\nexp username/password@service file=d:\\Db\\oracleFile.dmp log=d:\\db\\expfile.log\n\n#\u5bfc\u5165\u6307\u4ee4\nimp username/password@service file=d:\\Db\\oracleFile.dmp log=d:\\db\\impFile.log", 
+            "title": "\u5e38\u7528\u51fd\u6570"
+        }, 
+        {
+            "location": "/database/Oracle/oracleFunctions/#orace", 
+            "text": "\u65e5\u671f\u683c\u5f0f\u8f6c\u5316\u4e3a\u5b57\u7b26\u4e32  select to_char(sysdate,'yyyy-MM-dd hh24:mi:ss') from dual;\nselect to_char(sysdate,'yyyy-mm-dd hh24:mi:ss') as nowTime from dual;   //\u65e5\u671f\u8f6c\u5316\u4e3a\u5b57\u7b26\u4e32   \nselect to_char(sysdate,'yyyy') as nowYear   from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u5e74   \nselect to_char(sysdate,'mm')    as nowMonth from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u6708   \nselect to_char(sysdate,'dd')    as nowDay    from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u65e5   \nselect to_char(sysdate,'hh24') as nowHour   from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u65f6   \nselect to_char(sysdate,'mi')    as nowMinute from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u5206   \nselect to_char(sysdate,'ss')    as nowSecond from dual;   //\u83b7\u53d6\u65f6\u95f4\u7684\u79d2    \u5b57\u7b26\u4e32\u683c\u5f0f\u8f6c\u5316\u4e3a\u65e5\u671f  select to_date('20170304092103','yyyy-MM-dd hh24:mi:ss') from dual;    \u67e5\u770bOracle\u4fe1\u606f  select * from dba_objects a where a.object_type= X and a.owner=''; //\u67e5\u770b\u6307\u5b9a\u7528\u6237\u4e0bX X\u4ee3\u8868\u8868(TABLE)\u3001\u89c6\u56fe(VIEW)\u3001\u5b58\u50a8\u8fc7\u7a0b(PROCEDURE)\u3001\u5305(PACKAGE)\u7b49\u7b49    Oracle\u5bfc\u5165\u5bfc\u51fa\u6570\u636e\u5e93  #\u5bfc\u51fa\u6307\u4ee4\nexp username/password@service file=d:\\Db\\oracleFile.dmp log=d:\\db\\expfile.log\n\n#\u5bfc\u5165\u6307\u4ee4\nimp username/password@service file=d:\\Db\\oracleFile.dmp log=d:\\db\\impFile.log", 
+            "title": "orace\u51fd\u6570\u4f7f\u7528"
+        }, 
+        {
             "location": "/linux/centosInstallConfig/", 
             "text": "centos\u5b89\u88c5\u540e\u914d\u7f6e\n\n\n\n\n\n\n\u4fee\u6539\u7f51\u5361\u914d\u7f6e\n\n\nvi /etc/sysconfig/network-scripts/ifcfg-eth0 \n\u4fee\u6539ONBOOT=\u201cyes\u201d\n\u589e\u52a0IPADDR=\"192.168.0.90\" NETMASK=\"255.255.255.0\"\n\n\n\n\n\n\n\n\u4fee\u6539\u7f51\u5173\n\n\nvi /etc/sysconfig/network\n\u52a0\u5165GATEWAY=192.168.0.1\n\n\n\n\n\n\n\n\u4fee\u6539DNS\uff08\u53ef\u4e0a\u7f51\u914d\u7f6e\uff09\n\n\nvi /etc/resolv.conf\n\u52a0\u5165nameserver:\nnameserver 114.114.114.114\nnameserver 8.8.8.8\n\n\n\n\n\n\n\n\u91cd\u542f\u7f51\u7edc\u670d\u52a1\n\n\nservice network restart\n\n\n\n\n\n\n\nyum\u6e90\u7684\u914d\u7f6e\u548c\u4f7f\u7528\n\n\nhttp://www.centoscn.com/CentOS/2015/0918/6186.html\n\n\n\n\n\n\nyum\u62a5\u9519\u7684\u4fee\u6539\n\n\nhttp://blog.csdn.net/llnara/article/details/8645846\n\n\nhttp://bbs.vpser.net/archiver/tid-13873.html\n\n\n\n\n\n\n\u7cfb\u7edf\u4f18\u5316\n\n\n1. echo \"ulimit -SHn 102400\" \n /etc/rc.local\n\n2. vi /etc/security/limits.conf \u52a0\u5165\uff1a\n    *           soft   nofile       65535\n    *           hard   nofile       65535\n3. \u5173\u95edselinux\uff0c\u5982\u679c\u5173\u95ed\u540essh\u8fde\u4e0d\u4e0a\u5219\u91cd\u542f\u670d\u52a1\u5668\n    sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config\n    \u6216vim /etc/sysconfig/selinux\n    # SELINUX=enforcing\n    SELINUX=disabled\n4. \u5173\u95ed\u90e8\u5206\u529f\u80fd\n    chkconfig bluetooth off \n    chkconfig cups off \n    chkconfig ip6tables off\n5. \u5173\u95edipv6\n    echo \"NETWORKING_IPV6=off\" \n /etc/sysconfig/network", 
             "title": "Cento\u5b89\u88c5\u540e\u914d\u7f6e"
@@ -62,7 +127,7 @@
         }, 
         {
             "location": "/linux/linuxSkills/", 
-            "text": "\u5b89\u88c5\u4e0a\u4f20\u4e0b\u8f7d\u547d\u4ee4\n\n\nyum install -y lrzsz\n\n\n\n\n\n\n\n\u67e5\u770b\u7aef\u53e3\u4f7f\u7528\u60c5\u51b5\n\n\nnetstat -ntlp\n\n\n\n\n\n\n\n\u6587\u4ef6\u5f52\u6863\n\n\ntar -zcvf \u76ee\u6807\u6587\u4ef6 \u6e90\u6587\u4ef6 \u4f8b\uff1atar -zcvf /opt/back/file0321.tar.gz  file/\ntar -xzvf \u6587\u4ef6  \u4f8b\uff1atar -xzvf /opt/back/file0321.tar.gz\n\n\n\n\n\n\n\n\u52a8\u6001\u52a0\u8f7d\u65e5\u5fd7\u6587\u4ef6\n\n\ntail -fn 500 error.log\n\n\n\n\n\n\n\n\u8bbe\u7f6e\u4e34\u65f6\u522b\u540d\n\n\nalias cdopt='cd /opt/'\n\n\n\n\n\n\n\n\u8bbe\u7f6e\u6c38\u4e45\u522b\u540d\n\n\n\u7f16\u8f91.bashrc\u6587\u4ef6 \u627e\u5230alias\u5728\u5176\u6700\u540e\u52a0\u5165\nalias cdopt='cd /opt/'\n\n\n\n\n\n\n\nliunx\u5f00\u542f\u548c\u5173\u95edping\u64cd\u4f5c\n\n\n\u9ed8\u8ba4\u5f00\u542f\n\u5173\u95ed\uff1aecho 1 \n /proc/sys/net/ipv4/icmp_echo_ignore_all\n\u5f00\u542f\uff1aecho 0 \n /proc/sys/net/ipv4/icmp_echo_ignore_all\n\n\n\n\n\n\n\n\u6740\u638980\u7aef\u53e3\u76f8\u5173\u7684\u8fdb\u7a0b\n\n\nlsof -i :80|grep -v \"ID\"|awk '{print \"kill -9\",$2}'|sh\n\n\n\n\n\n\n\n\u66f4\u6539ssh\u9ed8\u8ba4\u7aef\u53e3\u3001\u7981\u6b62root\u767b\u5f55\n\n\nvi /etc/ssh/sshd_config\n#\u6dfb\u52a0\u4e0b\u9762\u5185\u5bb9\nPort 10022\nProtocol 2\nPermitRootLogin no\n#\u91cd\u542fssh\u670d\u52a1\nservice sshd reload\n\n\n\n\n\n\n\n\u521b\u5efa\u666e\u901a\u7528\u6237\u5e76\u8d4b\u4e88ROOT\u6743\u9650\n\n\n# \u521b\u5efa\u4e00\u4e2a\u540d\u4e3achris\u7684\u7528\u6237\nadduser wtl\n# \u7ed9chris\u521b\u5efa\u767b\u5f55\u5bc6\u7801\npasswd wtl\n#\u4f7f\u7528vi\u6253\u5f00\u4e86sudoers\u6587\u4ef6\nvisudo\n#\u5728sudoers\u7684\u6700\u540e\u4e00\u884c\u52a0\u5165\nwtl    ALL=(ALL)       ALL\n#\u4fdd\u5b58\u9000\u51fa\n\n\n\n\n\n\n\nlinux\u540c\u6b65\u65f6\u95f4centos\n\n\n# \u5b89\u88c5ntp\u670d\u52a1\u7684\u8f6f\u4ef6\u5305\nsudo yum install ntp\n# \u5c06ntp\u670d\u52a1\u8bbe\u7f6e\u4e3a\u7f3a\u7701\u542f\u52a8\nsudo chkconfig ntp on\n# \u4fee\u6539\u542f\u52a8\u53c2\u6570\uff0c\u589e\u52a0-g -x\u53c2\u6570\uff0c\u5141\u8bb8ntp\u670d\u52a1\u5728\u7cfb\u7edf\u65f6\u95f4\u8bef\u5dee\u8f83\u5927\u65f6\u4e5f\u80fd\u6b63\u5e38\u5de5\u4f5c\nsudo vi /etc/sysconfig/ntpd\n# \u542f\u52a8ntp\u670d\u52a1\nsudo service ntpd restart\n\n# \u5c06\u7cfb\u7edf\u65f6\u533a\u6539\u4e3a\u4e0a\u6d77\u65f6\u95f4 (\u4ea6\u5373CST\u65f6\u533a)\n$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime\n\n\n\n\n\n\n\n\u6ce8\u9500\u5f53\u524d\u767b\u5f55\u7528\u6237\n\n\n#\u67e5\u770b\u5f53\u524d\u767b\u5f55\u7528\u6237\nw\n#\u8e22\u6389TTY\u5bf9\u5e94\u7684\u7528\u6237\npkill -kill -t TTY\n\n\n\n\n\n\n\ncentos7\u67e5\u770b\u5f00\u653e\u7aef\u53e3\u53f7\n\n\nfirewall-cmd --list-all\ncat /etc/firewalld/zones/public.xml", 
+            "text": "\u5b89\u88c5\u4e0a\u4f20\u4e0b\u8f7d\u547d\u4ee4\n\n\nyum install -y lrzsz\n\n\n\n\n\n\n\n\u67e5\u770b\u7aef\u53e3\u4f7f\u7528\u60c5\u51b5\n\n\nnetstat -ntlp\n\n\n\n\n\n\n\n\u6587\u4ef6\u5f52\u6863\n\n\ntar -zcvf \u76ee\u6807\u6587\u4ef6 \u6e90\u6587\u4ef6 \u4f8b\uff1atar -zcvf /opt/back/file0321.tar.gz  file/\ntar -xzvf \u6587\u4ef6  \u4f8b\uff1atar -xzvf /opt/back/file0321.tar.gz\n\n\n\n\n\n\n\n\u52a8\u6001\u52a0\u8f7d\u65e5\u5fd7\u6587\u4ef6\n\n\ntail -fn 500 error.log\n\n\n\n\n\n\n\n\u8bbe\u7f6e\u4e34\u65f6\u522b\u540d\n\n\nalias cdopt='cd /opt/'\n\n\n\n\n\n\n\n\u8bbe\u7f6e\u6c38\u4e45\u522b\u540d\n\n\n\u7f16\u8f91.bashrc\u6587\u4ef6 \u627e\u5230alias\u5728\u5176\u6700\u540e\u52a0\u5165\nalias cdopt='cd /opt/'\n\n\n\n\n\n\n\nliunx\u5f00\u542f\u548c\u5173\u95edping\u64cd\u4f5c\n\n\n\u9ed8\u8ba4\u5f00\u542f\n\u5173\u95ed\uff1aecho 1 \n /proc/sys/net/ipv4/icmp_echo_ignore_all\n\u5f00\u542f\uff1aecho 0 \n /proc/sys/net/ipv4/icmp_echo_ignore_all\n\n\n\n\n\n\n\n\u6740\u638980\u7aef\u53e3\u76f8\u5173\u7684\u8fdb\u7a0b\n\n\nlsof -i :80|grep -v \"ID\"|awk '{print \"kill -9\",$2}'|sh\n\n\n\n\n\n\n\n\u66f4\u6539ssh\u9ed8\u8ba4\u7aef\u53e3\u3001\u7981\u6b62root\u767b\u5f55\n\n\nvi /etc/ssh/sshd_config\n#\u6dfb\u52a0\u4e0b\u9762\u5185\u5bb9\nPort 10022\nProtocol 2\nPermitRootLogin no\n#\u91cd\u542fssh\u670d\u52a1\nservice sshd reload\n\n\n\n\n\n\n\n\u521b\u5efa\u666e\u901a\u7528\u6237\u5e76\u8d4b\u4e88ROOT\u6743\u9650\n\n\n# \u521b\u5efa\u4e00\u4e2a\u540d\u4e3achris\u7684\u7528\u6237\nadduser wtl\n# \u7ed9chris\u521b\u5efa\u767b\u5f55\u5bc6\u7801\npasswd wtl\n#\u4f7f\u7528vi\u6253\u5f00\u4e86sudoers\u6587\u4ef6\nvisudo\n#\u5728sudoers\u7684\u6700\u540e\u4e00\u884c\u52a0\u5165\nwtl    ALL=(ALL)       ALL\n#\u4fdd\u5b58\u9000\u51fa\n\n\n\n\n\n\n\nlinux\u540c\u6b65\u65f6\u95f4centos\n\n\n# \u5b89\u88c5ntp\u670d\u52a1\u7684\u8f6f\u4ef6\u5305\nsudo yum install ntp\n# \u5c06ntp\u670d\u52a1\u8bbe\u7f6e\u4e3a\u7f3a\u7701\u542f\u52a8\nsudo chkconfig ntp on\n# \u4fee\u6539\u542f\u52a8\u53c2\u6570\uff0c\u589e\u52a0-g -x\u53c2\u6570\uff0c\u5141\u8bb8ntp\u670d\u52a1\u5728\u7cfb\u7edf\u65f6\u95f4\u8bef\u5dee\u8f83\u5927\u65f6\u4e5f\u80fd\u6b63\u5e38\u5de5\u4f5c\nsudo vi /etc/sysconfig/ntpd\n# \u542f\u52a8ntp\u670d\u52a1\nsudo service ntpd restart\n\n# \u5c06\u7cfb\u7edf\u65f6\u533a\u6539\u4e3a\u4e0a\u6d77\u65f6\u95f4 (\u4ea6\u5373CST\u65f6\u533a)\n$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime\n\n\n\n\n\n\n\n\u6ce8\u9500\u5f53\u524d\u767b\u5f55\u7528\u6237\n\n\n#\u67e5\u770b\u5f53\u524d\u767b\u5f55\u7528\u6237\nw\n#\u8e22\u6389TTY\u5bf9\u5e94\u7684\u7528\u6237\npkill -kill -t TTY\n\n\n\n\n\n\n\ncentos7\u67e5\u770b\u5f00\u653e\u7aef\u53e3\u53f7\n\n\nfirewall-cmd --list-all\ncat /etc/firewalld/zones/public.xml\n\n\n\n\n\n\n\n\u6839\u636e\u7aef\u53e3\u5217\u8fdb\u7a0b\n\n\nnetstat -ntlp | grep 8080", 
             "title": "\u5e38\u7528\u603b\u7ed3"
         }, 
         {
@@ -104,26 +169,6 @@
             "location": "/linux/linuxNetworkConfig/#_2", 
             "text": "service network restart\n/etc/init.d/network restart", 
             "title": "\u91cd\u65b0\u542f\u52a8\u7f51\u7edc\u914d\u7f6e"
-        }, 
-        {
-            "location": "/js/jsmap/", 
-            "text": "Map\u5728js\u4e2d\u7684\u4f7f\u7528\n\n\n\u521b\u5efa\u4e00\u4e2a\u65b0\u6570\u7ec4\uff0c\u5176\u7ed3\u679c\u662f\u8be5\u6570\u7ec4\u4e2d\u7684\u6bcf\u4e2a\u5143\u7d20\u90fd\u8c03\u7528\u4e00\u4e2a\u63d0\u4f9b\u7684\u51fd\u6570\u540e\u8fd4\u56de\u7684\u7ed3\u679c\n\n\njs\u65b9\u6cd5\n\n\nvar datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = datas.map(function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});\n\n\n\n\u5177\u4f53\u4f7f\u7528\u8be6\u60c5\u8bf7\u53c2\u8003\uff1a\nhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map\n\n\nJQuery\u65b9\u6cd5\n\n\nvar datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = $.map(datas,function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});", 
-            "title": "Map\u4f7f\u7528"
-        }, 
-        {
-            "location": "/js/jsmap/#mapjs", 
-            "text": "\u521b\u5efa\u4e00\u4e2a\u65b0\u6570\u7ec4\uff0c\u5176\u7ed3\u679c\u662f\u8be5\u6570\u7ec4\u4e2d\u7684\u6bcf\u4e2a\u5143\u7d20\u90fd\u8c03\u7528\u4e00\u4e2a\u63d0\u4f9b\u7684\u51fd\u6570\u540e\u8fd4\u56de\u7684\u7ed3\u679c", 
-            "title": "Map\u5728js\u4e2d\u7684\u4f7f\u7528"
-        }, 
-        {
-            "location": "/js/jsmap/#js", 
-            "text": "var datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = datas.map(function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});  \u5177\u4f53\u4f7f\u7528\u8be6\u60c5\u8bf7\u53c2\u8003\uff1a https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map", 
-            "title": "js\u65b9\u6cd5"
-        }, 
-        {
-            "location": "/js/jsmap/#jquery", 
-            "text": "var datas =[{a:1,b:2,c:3},{a:11,b:22,c:33},{a:111,b:222,c:333}];\nvar datasNew = $.map(datas,function(data){\n    return {\n        a1:data.a,\n        b1:data.b,\n        c1:data.c\n    }\n});", 
-            "title": "JQuery\u65b9\u6cd5"
         }, 
         {
             "location": "/git/git1/", 
