@@ -14,3 +14,15 @@
 2. 字符串格式转化为日期
 
 		select to_date('20170304092103','yyyy-MM-dd hh24:mi:ss') from dual;
+
+3. 查看Oracle信息
+
+		select * from dba_objects a where a.object_type= X and a.owner=''; //查看指定用户下X X代表表(TABLE)、视图(VIEW)、存储过程(PROCEDURE)、包(PACKAGE)等等
+
+4. Oracle导入导出数据库
+
+		#导出指令
+		exp username/password@service file=d:\Db\oracleFile.dmp log=d:\db\expfile.log
+
+		#导入指令
+		imp username/password@service file=d:\Db\oracleFile.dmp log=d:\db\impFile.log

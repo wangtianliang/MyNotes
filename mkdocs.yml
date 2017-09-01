@@ -6,6 +6,7 @@ pages:
     - 随机数: java/javaRandomString.md
 - JavaScript:
     - Map使用: js/jsmap.md
+    - EasyUI技巧: js/easyui.md
 - 数据库:
     - MySQL:
         - 常用函数: database/MySQL/mysqlFunctions.md

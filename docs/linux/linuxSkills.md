@@ -81,3 +81,7 @@
 	
 		firewall-cmd --list-all
 		cat /etc/firewalld/zones/public.xml
+
+* 根据端口列进程
+
+		netstat -ntlp | grep 8080
