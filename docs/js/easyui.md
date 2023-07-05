@@ -1,8 +1,8 @@
-#EasyUI使用技巧
+# EasyUI使用技巧
     
 总结日常EasyUI使用的小技巧
 
-##select标签在EasyUI中的使用
+## select标签在EasyUI中的使用
 
     <select id="elementId" class="easyui-combobox" data-options="onChange:initSelect,editable:false"></select>
 
