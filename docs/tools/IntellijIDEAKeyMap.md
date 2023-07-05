@@ -1,5 +1,5 @@
-#[Intellij IDEA 快捷键整理](http://www.cnblogs.com/tonycody/p/3257601.html "Intellij IDEA 快捷键整理（TonyCody）")
-##常规
+# [Intellij IDEA 快捷键整理](http://www.cnblogs.com/tonycody/p/3257601.html "Intellij IDEA 快捷键整理（TonyCody）")
+## 常规
 	Ctrl+Shift + Enter，语句完成
 	“！”，否定完成，输入表达式时按 “！”键
 	Ctrl+E，最近的文件
@@ -80,7 +80,7 @@
 	Ctrl+Backspace，按单词删除
 	Ctrl+"+/-"，当前方法展开、折叠
 	Ctrl+Shift+"+/-"，全部展开、折叠
-##调试部分、编译
+## 调试部分、编译
 	Ctrl+F2，停止
 	Alt+Shift+F9，选择 Debug
 	Alt+Shift+F10，选择 Run
@@ -113,14 +113,14 @@
 	Ctrl+Shift+F4，关闭活动选项卡
 	Ctrl+Tab，转到下一个拆分器
 	Ctrl+Shift+Tab，转到上一个拆分器
-##重构
+## 重构
 	Ctrl+Alt+Shift+T，弹出重构菜单
 	Shift+F6，重命名
 	F6，移动
 	F5，复制
 	Alt+Delete，安全删除
 	Ctrl+Alt+N，内联
-##查找
+## 查找
 	Ctrl+F，查找
 	Ctrl+R，替换
 	F3，查找下一个
