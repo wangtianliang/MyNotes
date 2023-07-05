@@ -1,4 +1,4 @@
-#centos安装后配置
+# centos安装后配置
 * 修改网卡配置
 	
 		vi /etc/sysconfig/network-scripts/ifcfg-eth0 
